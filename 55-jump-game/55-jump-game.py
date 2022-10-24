@@ -3,11 +3,15 @@ class Solution:
         maxReach = 0 
         i = 0
         target = len(nums)
-        while(i<len(nums) and i<=maxReach):
-            print(i)
+        
+        for i in range(len(nums)):
+            
             maxReach = max(i + nums[i], maxReach)
-            i+=1
-
-        if i == target:
+            print(i, maxReach)
+            if i >= maxReach:
+                print("==",i,maxReach)
+                break
+        print("outside",maxReach,i)
+        if i == len(nums) -1:
             return True
         return False
