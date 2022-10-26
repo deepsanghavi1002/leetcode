@@ -7,11 +7,12 @@ class Solution:
         
         dp = [0] + [float('inf')] * amount
         print(dp)
-        for c in coins:
-            for i in range(c,amount+1):
+        
+        for i in range(1,amount+1):
             
-            
-                
+            for c in coins:
+                if i -c < 0:
+                    continue
                 dp[i] = min(dp[i],dp[i-c]+1)
                 
         print(dp)
