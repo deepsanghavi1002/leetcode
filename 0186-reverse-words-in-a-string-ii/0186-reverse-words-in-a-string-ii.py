@@ -6,12 +6,9 @@ class Solution:
         i = 0
         j = len(s) - 1
         while i<j:
-            temp = s[i]
-            s[i] = s[j]
-            s[j] = temp
+            s[i], s[j] = s[j], s[i]
             i+=1
             j-=1
- 
         
         i = 0
         j = 0
@@ -19,22 +16,17 @@ class Solution:
             if s[i] == ' ':
                 var = i - 1
                 while j<var:
-                    temp = s[var]
-                    s[var] = s[j]
-                    s[j] = temp
+                    s[var], s[j] = s[j], s[var]
                     var -=1
                     j+=1
            
                 i+=1
                 j = i
-            i+=1
-            
+            i+=1          
   
         i-=1
         while i>j:
-            temp = s[i]
-            s[i] = s[j]
-            s[j] = temp
+            s[i], s[j] = s[j], s[i]
             j+=1
             i-=1
-        print(s)
+            
