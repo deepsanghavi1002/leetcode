@@ -7,7 +7,7 @@ class Solution:
         for j in range(len(nums)):
             
             total += nums[j]
-            print(total, nums[i], nums[j], "less", res)
+            
             while i<len(nums) and total >= target:
                 
                 res = min(res, j-i+1)
