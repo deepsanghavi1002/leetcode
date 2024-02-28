@@ -14,11 +14,6 @@ class Solution:
                 total -= nums[i]
                 i+=1
                 
-                
-                
-                
-            
-                
         return res if res <= len(nums) else 0
 
             
