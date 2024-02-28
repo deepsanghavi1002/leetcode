@@ -3,7 +3,7 @@ class Solution:
         i = 0
         j = 0
         total = 0
-        res = math.inf
+        res = len(nums)+1
         for j in range(len(nums)):
             
             total += nums[j]
@@ -19,7 +19,7 @@ class Solution:
                 
             
                 
-        return res if res != math.inf else 0
+        return res if res <= len(nums) else 0
 
             
             
