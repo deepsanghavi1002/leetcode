@@ -1,6 +1,6 @@
 class Solution:
     def minimumSwaps(self, nums: List[int]) -> int:
-        if (len(nums) == 1) or (len(nums) == 2 and nums[0] <= nums[1]):
+        if (len(nums) == 1):
             return 0
         small = min(nums)
         large = max(nums)
