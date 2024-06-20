@@ -6,7 +6,7 @@ class Solution:
             if s[i] == "*":
                 candle_count += 1
             cumulative_candles.append(candle_count)
-        print(cumulative_candles)
+      
         
         left_dish = []
         right_dish = []
@@ -22,8 +22,7 @@ class Solution:
                 right_dish_index = i
             right_dish.insert(0,right_dish_index)
             
-        print("closest right ",right_dish)
-        print("closest left dish" ,left_dish)
+      
         result = []
         for query in queries:
             
