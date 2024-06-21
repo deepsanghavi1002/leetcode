@@ -24,7 +24,7 @@ class Solution:
                 
         res = []
         for key in sorted(d.keys()):
-            print(d[key])
+  
             res.append(d[key])
             
         return res
