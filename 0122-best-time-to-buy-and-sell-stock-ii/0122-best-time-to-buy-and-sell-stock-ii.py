@@ -5,6 +5,8 @@ class Solution:
         peak = valley 
         
         
+        diff = [prices[i+1] - prices[i] for i in range(len(prices) - 1)]
+        print(diff)
         for i in range(len(prices)):
             if prices[i] < peak:
                 total += peak - valley
@@ -16,5 +18,6 @@ class Solution:
                 peak = prices[i]
                 
         total += peak - valley 
-            
-        return total
+        
+        ans = sum([i for i in diff if i>0])
+        return ans
