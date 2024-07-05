@@ -3,7 +3,7 @@ class Solution:
         diff = [prices[i+1] - prices[i] for i in range(len(prices) - 1)]
         
         
-        print(diff)
+
         curr_max = 0
         maxx = 0
         for c in diff:
